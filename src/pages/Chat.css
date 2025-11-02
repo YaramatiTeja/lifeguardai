@@ -1,0 +1,82 @@
+/* 🌈 General Container Styling */
+.container {
+  font-family: "Poppins", sans-serif;
+}
+
+/* 💬 Chat Box Area */
+.chat-box {
+  height: 420px;
+  overflow-y: auto;
+  background: #f9ffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 👤 User Message Bubble */
+.user-bubble {
+  background: linear-gradient(135deg, #28a745, #3bd67f);
+  color: white;
+  border-radius: 16px 16px 0 16px;
+  padding: 10px 14px;
+  margin: 8px 0;
+  max-width: 75%;
+  align-self: flex-end;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* 🤖 Bot Message Bubble */
+.bot-bubble {
+  background: #ffffff;
+  border: 1px solid #d9d9d9;
+  border-radius: 16px 16px 16px 0;
+  padding: 10px 14px;
+  margin: 8px 0;
+  color: #333;
+  max-width: 75%;
+  align-self: flex-start;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* ✨ Message Text */
+.message-text {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+/* 🪶 Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 🖋️ Input Area Styling */
+.input-group input {
+  border-radius: 20px;
+  padding: 10px 15px;
+}
+
+.input-group button {
+  border-radius: 20px;
+  transition: all 0.2s ease;
+}
+
+.input-group button:hover {
+  background-color: #1e8f3b;
+}
+
+/* 🧭 Scrollbar Style */
+.chat-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.chat-box::-webkit-scrollbar-thumb {
+  background-color: #bde4c9;
+  border-radius: 10px;
+}
